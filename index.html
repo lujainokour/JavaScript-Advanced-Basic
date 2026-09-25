@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant</title>
+</head>
+<body>
+
+    <h1>Restaurant</h1>
+
+    <form onsubmit="submitOrder(); return false;" novalidate>
+
+        <label for="username">Username:</label>
+        <input type="text" id="username">
+        <br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password">
+        <br><br>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone">
+        <br><br>
+
+        <label for="order">Order:</label>
+        <select id="order">
+            <option value="Burger">Burger</option>
+            <option value="Shawarma">Shawarma</option>
+            <option value="Zinger">Zinger</option>
+        </select>
+        <br><br>
+
+        <button type="submit">Submit</button>
+
+    </form>
+
+    <p id="message"></p>
+    <p id="savedOrder"></p>
+    <p id="savedUsername"></p>
+
+    <script src="fun.js"></script>
+
+</body>
+</html>
